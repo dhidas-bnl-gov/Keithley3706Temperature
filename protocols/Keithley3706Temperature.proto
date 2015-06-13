@@ -1,0 +1,74 @@
+
+ExtraInput = Ignore;
+ReadTimeout = 1000;
+
+ReadBuffer {
+  # SYS=$1;
+  # DEV=$2;
+  # BUS=$3;
+  # SLOT=$4;
+  out ' scan.reset() scan.create("slot6") buf6.clear() scan.execute(buf6) printbuffer(1,1,buf6.timestamps) printbuffer(1,20,buf6)',LF;
+  in "%T(%b/%d/%Y %H:%M:%S).%*i",LF
+     "%(\$1{\$2-\$3S\$4}T01)f, ",
+     "%(\$1{\$2-\$3S\$4}T02)f, ",
+     "%(\$1{\$2-\$3S\$4}T03)f, ",
+     "%(\$1{\$2-\$3S\$4}T04)f, ",
+     "%(\$1{\$2-\$3S\$4}T05)f, ",
+     "%(\$1{\$2-\$3S\$4}T06)f, ",
+     "%(\$1{\$2-\$3S\$4}T07)f, ",
+     "%(\$1{\$2-\$3S\$4}T08)f, ",
+     "%(\$1{\$2-\$3S\$4}T09)f, ",
+     "%(\$1{\$2-\$3S\$4}T10)f, ",
+     "%(\$1{\$2-\$3S\$4}T11)f, ",
+     "%(\$1{\$2-\$3S\$4}T12)f, ",
+     "%(\$1{\$2-\$3S\$4}T13)f, ",
+     "%(\$1{\$2-\$3S\$4}T14)f, ",
+     "%(\$1{\$2-\$3S\$4}T15)f, ",
+     "%(\$1{\$2-\$3S\$4}T16)f, ",
+     "%(\$1{\$2-\$3S\$4}T17)f, ",
+     "%(\$1{\$2-\$3S\$4}T18)f, ",
+     "%(\$1{\$2-\$3S\$4}T19)f, ",
+     "%(\$1{\$2-\$3S\$4}T20)f",
+     LF,"TSP>",LF;
+  @init {
+  out
+#  ' dmm.func = "temperature" ',
+#  ' dmm.reset("active") ',
+#  ' dmm.transducer = dmm.TEMP_FOURRTD ',
+#  ' dmm.fourrtd = dmm.RTD_PT100 ',
+#  ' dmm.configure.set("TemperaturePT100_6") ',
+#  ' dmm.setconfig("slot6", "TemperaturePT100_6") ',
+#  ' buf6 = dmm.makebuffer(200) '
+#  ' buf6.collecttimestamps = 1 '
+  ' buf6.clear() ',
+#  ' scan.reset() ',
+  ' scan.create("slot6") ',
+  ' scan.execute(buf6) ',
+  ' printbuffer(1,1,buf6.timestamps) ',
+  ' printbuffer(1,20,buf6) '
+  ' buf6.clear() '
+  ,LF;
+  in "%T(%b/%d/%Y %H:%M:%S).%*i",LF
+     "%(\$1{\$2-\$3S\$4}T01)f, ",
+     "%(\$1{\$2-\$3S\$4}T02)f, ",
+     "%(\$1{\$2-\$3S\$4}T03)f, ",
+     "%(\$1{\$2-\$3S\$4}T04)f, ",
+     "%(\$1{\$2-\$3S\$4}T05)f, ",
+     "%(\$1{\$2-\$3S\$4}T06)f, ",
+     "%(\$1{\$2-\$3S\$4}T07)f, ",
+     "%(\$1{\$2-\$3S\$4}T08)f, ",
+     "%(\$1{\$2-\$3S\$4}T09)f, ",
+     "%(\$1{\$2-\$3S\$4}T10)f, ",
+     "%(\$1{\$2-\$3S\$4}T11)f, ",
+     "%(\$1{\$2-\$3S\$4}T12)f, ",
+     "%(\$1{\$2-\$3S\$4}T13)f, ",
+     "%(\$1{\$2-\$3S\$4}T14)f, ",
+     "%(\$1{\$2-\$3S\$4}T15)f, ",
+     "%(\$1{\$2-\$3S\$4}T16)f, ",
+     "%(\$1{\$2-\$3S\$4}T17)f, ",
+     "%(\$1{\$2-\$3S\$4}T18)f, ",
+     "%(\$1{\$2-\$3S\$4}T19)f, ",
+     "%(\$1{\$2-\$3S\$4}T20)f",
+     LF,"TSP>",LF;
+  }
+}

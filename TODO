@@ -1,0 +1,2 @@
+* lookup epics TIME and see if compatible with stream input time
+* figure out why with :00: stream complains about format
