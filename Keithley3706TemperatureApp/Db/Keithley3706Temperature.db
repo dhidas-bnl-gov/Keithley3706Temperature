@@ -5,20 +5,13 @@
 
 
 
-record(ai, "$(SYS){$(DEV)-$(BUS)}INIT")
-{
-  field (DESC, "Time")
-  field (DTYP, "stream")
-  field (SCAN, "10 second")
-  field (INP, "@StreamTest.proto Init ($(SYS),$(DEV),$(BUS)) $(BUS)")
-}
 
 record(ai, "$(SYS){$(DEV)-$(BUS)S$(SLOT)}")
 {
   field (DESC, "Time")
   field (DTYP, "stream")
   field (SCAN, "10 second")
-  field (INP, "@StreamTest.proto ReadBuffer($(SYS),$(DEV),$(BUS),$(SLOT)) $(BUS)")
+  field (INP, "@Keithley3706Temperature.proto ReadBuffer($(SYS),$(DEV),$(BUS),$(SLOT)) $(BUS)")
 }
 
 
