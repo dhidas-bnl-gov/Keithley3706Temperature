@@ -10,13 +10,13 @@ ReadBuffer {
   # BUS=$3;
   # SLOT=$4;
 
-  out ' buf6.clear() ',
+  out ' buf\$4.clear() ',
       ' scan.reset() ',
-      ' scan.create("slot6") ',
-      ' scan.execute(buf6) ',
-      ' printbuffer(1,1,buf6.timestamps) ',
-      ' printbuffer(1,20,buf6) ',
-      ' buf6.clear() ',
+      ' scan.create("slot\$4") ',
+      ' scan.execute(buf\$4) ',
+      ' printbuffer(1,1,buf\$4.timestamps) ',
+      ' printbuffer(1,20,buf\$4) ',
+      ' buf\$4.clear() ',
       LF;
   in '%T(%b/%d/%Y %H:%M:%S).%*i',LF
      '%(\$1{\$2-\$3S\$4}T01)f, ',
@@ -41,13 +41,13 @@ ReadBuffer {
      '%(\$1{\$2-\$3S\$4}T20)f',
      LF,'TSP>',LF;
   @init {
-    out ' buf6.clear() ',
+    out ' buf\$4.clear() ',
         ' scan.reset() ',
-        ' scan.create("slot6") ',
-        ' scan.execute(buf6) ',
-        ' printbuffer(1,1,buf6.timestamps) ',
-        ' printbuffer(1,20,buf6) ',
-        ' buf6.clear() ',
+        ' scan.create("slot\$4") ',
+        ' scan.execute(buf\$4) ',
+        ' printbuffer(1,1,buf\$4.timestamps) ',
+        ' printbuffer(1,20,buf\$4) ',
+        ' buf\$4.clear() ',
         LF;
     in '%T(%b/%d/%Y %H:%M:%S).%*i',LF
        '%(\$1{\$2-\$3S\$4}T01)f, ',
