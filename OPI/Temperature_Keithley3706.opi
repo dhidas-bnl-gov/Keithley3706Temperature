@@ -3,6 +3,10 @@
   <auto_zoom_to_fit_all>false</auto_zoom_to_fit_all>
   <macros>
     <include_parent_macros>true</include_parent_macros>
+    <SYS>SR:C99-ID:G1</SYS>
+    <DEV>IVU88:1</DEV>
+    <BUS>K1</BUS>
+    <SLOT>6</SLOT>
   </macros>
   <wuid>-1704011e:14d9aafc574:-6b55</wuid>
   <boy_version>3.2.10.201405280937</boy_version>
