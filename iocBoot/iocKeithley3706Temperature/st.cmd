@@ -15,9 +15,8 @@ dbLoadDatabase "dbd/Keithley3706Temperature.dbd"
 Keithley3706Temperature_registerRecordDeviceDriver pdbbase
 
 
-drvAsynIPPortConfigure ("KTEMP1", "192.168.1.10:5025")
-dbLoadRecords("db/Keithley3706Temperature.db","SYS=$(SYS), DEV=$(DEV), BUS=KTEMP1, SLOT=6")
-dbLoadRecords("db/Keithley3706Temperature.db","SYS=BLAH, DEV=$(DEV), BUS=KTEMP1, SLOT=6")
+drvAsynIPPortConfigure ("K1", "192.168.1.10:5025")
+dbLoadRecords("db/Keithley3706Temperature.db","SYS=$(SYS), DEV=$(DEV), BUS=K1, SLOT=6")
 
 
 cd ${TOP}/iocBoot/${IOC}
