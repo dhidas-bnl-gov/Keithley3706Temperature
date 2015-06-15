@@ -1903,7 +1903,7 @@ $(pv_value)</tooltip>
     <wuid>-1704011e:14d9aafc574:-6264</wuid>
     <auto_size>true</auto_size>
     <scripts />
-    <height>49</height>
+    <height>23</height>
     <name>Label</name>
     <scale_options>
       <width_scalable>true</width_scalable>
@@ -1919,11 +1919,11 @@ $(pv_value)</tooltip>
     </foreground_color>
     <widget_type>Label</widget_type>
     <enabled>true</enabled>
-    <text>Temperature Panel $DEV{$SYS-$BUSS$SLOT}</text>
+    <text>Temperature Panel $(DEV){$(SYS)-$(BUS)S$(SLOT)}</text>
     <font>
       <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
     </font>
-    <width>445</width>
+    <width>357</width>
     <border_style>1</border_style>
     <rules />
     <border_width>1</border_width>
