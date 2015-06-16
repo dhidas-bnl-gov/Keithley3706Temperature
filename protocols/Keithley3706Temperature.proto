@@ -18,7 +18,8 @@ ReadBuffer {
       ' printbuffer(1,20,buf\$4) ',
       ' buf\$4.clear() ',
       LF;
-  in '%T(%b/%d/%Y %H:%M:%S).%*i',LF
+
+  in '%(TIME)T(%b/%d/%Y %H:%M:%S).%*i',LF
      '%(\$1{\$2-\$3S\$4}T01)f, ',
      '%(\$1{\$2-\$3S\$4}T02)f, ',
      '%(\$1{\$2-\$3S\$4}T03)f, ',
@@ -40,6 +41,7 @@ ReadBuffer {
      '%(\$1{\$2-\$3S\$4}T19)f, ',
      '%(\$1{\$2-\$3S\$4}T20)f',
      LF,'TSP>',LF;
+
   @init {
     out ' buf\$4.clear() ',
         ' scan.reset() ',
@@ -49,7 +51,8 @@ ReadBuffer {
         ' printbuffer(1,20,buf\$4) ',
         ' buf\$4.clear() ',
         LF;
-    in '%T(%b/%d/%Y %H:%M:%S).%*i',LF
+
+    in '%(TIME)T(%b/%d/%Y %H:%M:%S).%*i',LF
        '%(\$1{\$2-\$3S\$4}T01)f, ',
        '%(\$1{\$2-\$3S\$4}T02)f, ',
        '%(\$1{\$2-\$3S\$4}T03)f, ',
