@@ -11,8 +11,6 @@ ReadBuffer {
   # BUS=$3;
   # SLOT=$4;
 
-  ExtraInput = Ignore;
-
   out ' readSlot\$4.run() ',
       LF;
 
