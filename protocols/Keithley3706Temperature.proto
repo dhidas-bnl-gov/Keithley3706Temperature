@@ -1,6 +1,7 @@
 
-ExtraInput = Ignore;
 ReadTimeout = 1000;
+
+
 
 
 
@@ -10,13 +11,9 @@ ReadBuffer {
   # BUS=$3;
   # SLOT=$4;
 
-  out ' buf\$4.clear() ',
-      ' scan.reset() ',
-      ' scan.create("slot\$4") ',
-      ' scan.execute(buf\$4) ',
-      ' printbuffer(1,1,buf\$4.timestamps) ',
-      ' printbuffer(1,20,buf\$4) ',
-      ' buf\$4.clear() ',
+  ExtraInput = Ignore;
+
+  out ' readSlot\$4.run() ',
       LF;
 
   in '%(TIME)T(%b/%d/%Y %H:%M:%S).%*i',LF
@@ -43,13 +40,7 @@ ReadBuffer {
      LF,'TSP>',LF;
 
   @init {
-    out ' buf\$4.clear() ',
-        ' scan.reset() ',
-        ' scan.create("slot\$4") ',
-        ' scan.execute(buf\$4) ',
-        ' printbuffer(1,1,buf\$4.timestamps) ',
-        ' printbuffer(1,20,buf\$4) ',
-        ' buf\$4.clear() ',
+    out ' readSlot\$4.run() ',
         LF;
 
     in '%(TIME)T(%b/%d/%Y %H:%M:%S).%*i',LF
