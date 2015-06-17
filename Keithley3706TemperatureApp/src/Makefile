@@ -29,7 +29,7 @@ DBD += Keithley3706Temperature.dbd
 
 # Keithley3706Temperature.dbd will be made up from these files:
 Keithley3706Temperature_DBD += base.dbd
-Keithley3706Temperature_DBD += stream.dbd
+Keithley3706Temperature_DBD += $(TOP)/db/stream.dbd
 Keithley3706Temperature_DBD += asyn.dbd
 Keithley3706Temperature_DBD += drvAsynIPPort.dbd
 

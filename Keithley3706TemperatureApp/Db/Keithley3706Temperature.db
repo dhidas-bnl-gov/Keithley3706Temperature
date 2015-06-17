@@ -6,7 +6,7 @@
 
 
 
-record(ai, "$(SYS){$(DEV)-$(BUS)S$(SLOT)}")
+record(ai, "$(SYS){$(DEV)-$(BUS)S$(SLOT)}Update")
 {
   field (DESC, "Time")
   field (DTYP, "stream")

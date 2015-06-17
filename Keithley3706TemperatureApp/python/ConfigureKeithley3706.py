@@ -7,6 +7,10 @@ cs = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 cs.connect( ('192.168.1.10', 5025) )
 
 
+# Reset and define the temperature function we want to use.
+# Then configure which slots we want to use what temperature functions.
+# In principle this can be done channel by channel, or with groupings
+# of channels eg '6001,6004', or '6002:6008' for a range
 cs.send(  ' reset() ')
 cs.send(  ' dmm.func = "temperature" ')
 cs.send(  ' dmm.reset("active") ')
@@ -34,6 +38,12 @@ cs.send(  ' buf6.collecttimestamps = 1 ')
 
 cs.send(  '\n' )
 data = cs.recv(512)
-print data
+#print data
+
+
+
+
+
+
 
 cs.close()
