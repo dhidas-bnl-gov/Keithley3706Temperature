@@ -17,23 +17,103 @@ record(ai, "$(SYS){$(DEV)-$(BUS)S$(SLOT)}Update")
 }
 
 
-record(ao, "$(SYS){$(DEV)-$(BUS)S$(SLOT)}T01") { field (DESC, "Temperature in C") }
-record(ao, "$(SYS){$(DEV)-$(BUS)S$(SLOT)}T02") { field (DESC, "Temperature in C") }
-record(ao, "$(SYS){$(DEV)-$(BUS)S$(SLOT)}T03") { field (DESC, "Temperature in C") }
-record(ao, "$(SYS){$(DEV)-$(BUS)S$(SLOT)}T04") { field (DESC, "Temperature in C") }
-record(ao, "$(SYS){$(DEV)-$(BUS)S$(SLOT)}T05") { field (DESC, "Temperature in C") }
-record(ao, "$(SYS){$(DEV)-$(BUS)S$(SLOT)}T06") { field (DESC, "Temperature in C") }
-record(ao, "$(SYS){$(DEV)-$(BUS)S$(SLOT)}T07") { field (DESC, "Temperature in C") }
-record(ao, "$(SYS){$(DEV)-$(BUS)S$(SLOT)}T08") { field (DESC, "Temperature in C") }
-record(ao, "$(SYS){$(DEV)-$(BUS)S$(SLOT)}T09") { field (DESC, "Temperature in C") }
-record(ao, "$(SYS){$(DEV)-$(BUS)S$(SLOT)}T10") { field (DESC, "Temperature in C") }
-record(ao, "$(SYS){$(DEV)-$(BUS)S$(SLOT)}T11") { field (DESC, "Temperature in C") }
-record(ao, "$(SYS){$(DEV)-$(BUS)S$(SLOT)}T12") { field (DESC, "Temperature in C") }
-record(ao, "$(SYS){$(DEV)-$(BUS)S$(SLOT)}T13") { field (DESC, "Temperature in C") }
-record(ao, "$(SYS){$(DEV)-$(BUS)S$(SLOT)}T14") { field (DESC, "Temperature in C") }
-record(ao, "$(SYS){$(DEV)-$(BUS)S$(SLOT)}T15") { field (DESC, "Temperature in C") }
-record(ao, "$(SYS){$(DEV)-$(BUS)S$(SLOT)}T16") { field (DESC, "Temperature in C") }
-record(ao, "$(SYS){$(DEV)-$(BUS)S$(SLOT)}T17") { field (DESC, "Temperature in C") }
-record(ao, "$(SYS){$(DEV)-$(BUS)S$(SLOT)}T18") { field (DESC, "Temperature in C") }
-record(ao, "$(SYS){$(DEV)-$(BUS)S$(SLOT)}T19") { field (DESC, "Temperature in C") }
-record(ao, "$(SYS){$(DEV)-$(BUS)S$(SLOT)}T20") { field (DESC, "Temperature in C") }
+record(ao, "$(SYS){$(DEV)-$(BUS)S$(SLOT)}T01") {
+  field (PREC, 6)
+  field (DESC, "Temperature in C")
+}
+
+record(ao, "$(SYS){$(DEV)-$(BUS)S$(SLOT)}T02") {
+  field (PREC, 6)
+  field (DESC, "Temperature in C")
+}
+
+record(ao, "$(SYS){$(DEV)-$(BUS)S$(SLOT)}T03") {
+  field (PREC, 6)
+  field (DESC, "Temperature in C")
+}
+
+record(ao, "$(SYS){$(DEV)-$(BUS)S$(SLOT)}T04") {
+  field (PREC, 6)
+  field (DESC, "Temperature in C")
+}
+
+record(ao, "$(SYS){$(DEV)-$(BUS)S$(SLOT)}T05") {
+  field (PREC, 6)
+  field (DESC, "Temperature in C")
+}
+
+record(ao, "$(SYS){$(DEV)-$(BUS)S$(SLOT)}T06") {
+  field (PREC, 6)
+  field (DESC, "Temperature in C")
+}
+
+record(ao, "$(SYS){$(DEV)-$(BUS)S$(SLOT)}T07") {
+  field (PREC, 6)
+  field (DESC, "Temperature in C")
+}
+
+record(ao, "$(SYS){$(DEV)-$(BUS)S$(SLOT)}T08") {
+  field (PREC, 6)
+  field (DESC, "Temperature in C")
+}
+
+record(ao, "$(SYS){$(DEV)-$(BUS)S$(SLOT)}T09") {
+  field (PREC, 6)
+  field (DESC, "Temperature in C")
+}
+
+record(ao, "$(SYS){$(DEV)-$(BUS)S$(SLOT)}T10") {
+  field (PREC, 6)
+  field (DESC, "Temperature in C")
+}
+
+record(ao, "$(SYS){$(DEV)-$(BUS)S$(SLOT)}T11") {
+  field (PREC, 6)
+  field (DESC, "Temperature in C")
+}
+
+record(ao, "$(SYS){$(DEV)-$(BUS)S$(SLOT)}T12") {
+  field (PREC, 6)
+  field (DESC, "Temperature in C")
+}
+
+record(ao, "$(SYS){$(DEV)-$(BUS)S$(SLOT)}T13") {
+  field (PREC, 6)
+  field (DESC, "Temperature in C")
+}
+
+record(ao, "$(SYS){$(DEV)-$(BUS)S$(SLOT)}T14") {
+  field (PREC, 6)
+  field (DESC, "Temperature in C")
+}
+
+record(ao, "$(SYS){$(DEV)-$(BUS)S$(SLOT)}T15") {
+  field (PREC, 6)
+  field (DESC, "Temperature in C")
+}
+
+record(ao, "$(SYS){$(DEV)-$(BUS)S$(SLOT)}T16") {
+  field (PREC, 6)
+  field (DESC, "Temperature in C")
+}
+
+record(ao, "$(SYS){$(DEV)-$(BUS)S$(SLOT)}T17") {
+  field (PREC, 6)
+  field (DESC, "Temperature in C")
+}
+
+record(ao, "$(SYS){$(DEV)-$(BUS)S$(SLOT)}T18") {
+  field (PREC, 6)
+  field (DESC, "Temperature in C")
+}
+
+record(ao, "$(SYS){$(DEV)-$(BUS)S$(SLOT)}T19") {
+  field (PREC, 6)
+  field (DESC, "Temperature in C")
+}
+
+record(ao, "$(SYS){$(DEV)-$(BUS)S$(SLOT)}T20") {
+  field (PREC, 6)
+  field (DESC, "Temperature in C")
+}
+
