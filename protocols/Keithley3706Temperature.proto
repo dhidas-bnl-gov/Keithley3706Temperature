@@ -1,6 +1,8 @@
 
-ReadTimeout = 1000;
-
+ReadTimeout = 2000;
+ReplyTimeout = 2000;
+ExtraInput = Ignore;
+Terminator ="";
 
 
 

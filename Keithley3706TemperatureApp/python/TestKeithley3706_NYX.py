@@ -11,7 +11,7 @@ cs.connect( ('192.168.1.101', 5025) )
 
 while True:
   
-  cs.send(  ' readSlot6.run() ' )
+  cs.send(  ' readSlot1.run() ' )
   cs.send(  ' \n ')
 
   data = cs.recv(4096)
